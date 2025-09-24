@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,51 +7,350 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage | Department of Information and Communication Technologies</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="#specialties">Спеціальності</a></li>
-        <li><a href="#science">Наука</a></li>
-        <li><a href="#news">Новини</a></li>
-        <li><a href="#contacts">Контакти</a></li>
-    </ul>
-</nav>
 
-<h1>Створюй майбутнє. Тут і зараз!</h1>
-<p>
-    Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
-    Кафедра ІКТ ХАІ - це місце, де ідеї
-    стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій
-    шлях вже сьогодні!
-</p>
-<h2 id="specialties">Наші спеціальності</h2>
-<p>
-    Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних
-    та інформаційних технологій за двома
-    напрямками 172 - Електронні комунікації та радіотехніка і 126 -
-    Інформаційні системи та технології.
-</p>
-<h2>Якщо в числах</h2>
-<h2 id="science">Наука та інновації</h2>
-<p>Від аудиторії — до реального проєкту</p>
-<p>
-    Наші студенти не просто вивчають теорію — вони беруть участь у реальних
-    проєктах, розробляють ІТ-рішення,
-    створюють стартапи та співпрацюють з компаніями-партнерами. На кафедрі
-    діють наукові гуртки, лабораторії та
-    ініціативи, де кожен може реалізувати себе ще під час навчання.
-    Дослідження, що перетворюються на продукт —
-    саме тут це можливо.
-</p>
-<h2>Нам довіряють</h2>
-<h2 id="contact">Контакти</h2>
-<p>61070, Харків, вул. Вадима Манька, 17</p>
-<p>НАУ ім. М.Є.Жуковського "ХАІ"</p>
-<p>Кафедра інформаційно-комунікаційних технологій No504</p>
-<h2 id="news">Новини</h2>
-<p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
-<p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
-</body>
-</html>
+<header>
+    <div class="header-container">
+        <!-- Логотип -->
+        <div class="logo">
+            <img src="images/logo.svg" alt="Логотип кафедри">
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="#specialties">Спеціальності</a></li> <!-- спец+-->
+            <li><a href="#numbers">Якщо в числах</a></li> <!-- числа+-->
+            <li><a href="#reviews">Відгуки</a></li> <!-- відгук+-->
+            <li><a href="#science">Наука</a></li> <!-- наука+-->
+            <li><a href="#trust">Нам довіряють</a></li> <!-- довіра+-->
+            <li><a href="#contacts">Контакти</a></li> <!-- конт+-->
+            <li><a href="#news">Новини</a></li> <!-- ньюз+-->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Створюй майбутнє.<br>Тут і зараз!</h1>
+            <p>
+                Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
+                Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають
+                двері до кар’єри мрії. Почни свій шлях вже сьогодні!
+            </p>
+            <button class="cta">Хочу поступити</button>
+        </div>
+
+        <div class="banner-image">
+            <img src="images/boy 2.png" alt="Студент кафедри ІКТ">
+        </div>
+    </section>
+
+
+
+
+    <section id="specialties">
+        <h2>Наші спеціальності</h2>
+        <p>
+            Ми спеціалізуємось на підготовці фахівців в області мережевих, програмних
+            та інформаційних технологій за двома напрямками:
+        </p>
+        <div class="specialty-cards">
+            <div class="card">
+                <h3>126</h3>
+                <p>«Інформаційні системи і технології»</p>
+            </div>
+            <div class="card">
+                <h3>172</h3>
+                <p>«Електронні комунікації та радіотехніка»</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="numbers">
+        <h2>Якщо в числах</h2>
+
+        <div class="number">
+            <h3>18</h3>
+            <p>Досвідчених викладачів</p>
+        </div>
+
+        <div class="number">
+            <h3>65</h3>
+            <p>Навчальних дисциплін</p>
+        </div>
+
+        <div class="number">
+            <h3>1200+</h3>
+            <p>Талановитих випускників</p>
+        </div>
+
+        <div class="number">
+            <h3> ∞ </h3>
+            <p>Унікального досвіду</p>
+        </div>
+    </section>
+
+
+    <section id="reviews">
+        <h2><span style="color:red">#DICT</span>Experience</h2>
+
+        <div class="carousel">
+            <button class="prev">⟨</button>
+            <div class="carousel-window">
+                <div class="carousel-track">
+                    <!-- Відгук з аудіо -->
+                    <div class="review">
+                        <p>"Кафедра чудова і дуже хороша №1"</p>
+                        <p><b>Максим1</b><br>528, група</p>
+                        <audio controls>
+                            <source src="images/example.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <!-- -->
+                    <div class="review">
+                        <p>"Кафедра чудова і дуже хороша №1"</p>
+                        <p><b>Максим1</b><br>528, група</p>
+                    </div>
+                    <div class="review">
+                        <p>"Кафедра чудова і дуже хороша №2"</p>
+                        <p><b>Максим2</b><br>528, група</p>
+                    </div>
+                    <div class="review">
+                        <p>"Кафедра чудова і дуже хороша №3"</p>
+                        <p><b>Максим3</b><br>528, група</p>
+                    </div>
+                    <div class="review">
+                        <p>"Кафедра чудова і дуже хороша №4"</p>
+                        <p><b>Максим4</b><br>528, група</p>
+                    </div>
+                    <div class="review">
+                        <p>"Кафедра чудова і дуже хороша №5"</p>
+                        <p><b>Максим5</b><br>528, група</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next">⟩</button>
+        </div>
+    </section>
+
+
+    <section id="science">
+        <div class="science-container">
+            <div class="science-image">
+                <br>
+                <img src="images/sc_cut.png" alt="Наука та інновації">
+            </div>
+            <div class="science-text">
+                <h2>Наука та інновації</h2>
+                <h3>Від аудиторії - до реального проекту</h3>
+                <p>
+                    Наші студенти не просто вивчають теорію - вони беруть участь у реальних проектах,
+                    розробляють ІТ-рішення, створюють стартапи та співпрацюють із компаніями-партнерами.
+                    На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати
+                    себе ще під час навчання. Дослідження, що перетворюються на продукт - саме тут це можливо.
+                </p>
+                <button>Дізнатись більше</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="trust">
+        <h2>Нам довіряють</h2>
+        <div class="logos">
+            <img src="images/nix.svg" alt="NIX" title="NIX">
+            <img src="images/sigma.svg" alt="Sigma" title="Sigma">
+            <img src="images/gl.svg" alt="GlobalLogic" title="GlobalLogic">
+            <img src="images/epam.svg" alt="EPAM" title="EPAM">
+ <!--           <img src="images/softserve.svg" alt="SoftServe" title="SoftServe">-->
+            <img src="images/dataart.svg" alt="DataArt" title="DataArt">
+        </div>
+    </section>
+
+
+    <section id="contacts">
+        <h2>Контакти</h2>
+        <p>
+            61070, Харків, вул. Вадима Манька, 17 <br>
+            НАУ "ХАІ" <br>
+            Кафедра інформаційно-комунікаційних технологій №504
+            <br>
+            <br>
+            Виконав: Когут Максим, 528 група
+        </p>
+
+        <div class="contact-blocks">
+            <div class="contact-item">
+                <h3>Телефон</h3>
+                <p><a href="tel:+380577884352">(057) 788-43-52</a></p>
+                <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+                <small>з буднів з 9:00 до 17:00</small>
+            </div>
+
+            <div class="contact-item">
+                <h3>Social</h3>
+                <p>
+                    <a href="#"><img src="images/fb.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/in.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/telegram.svg" alt="Telegram"></a>
+                    <a href="#"><img src="images/viber.svg" alt="Viber"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Пошта</h3>
+                <p><a href="mailto:maxim.kogut@528group.com">telecom.xoi@gmail.com</a></p>
+                <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+                <p><a href="mailto:PK@khai.edu">PK@khai.edu</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <h2>Новини</h2>
+
+        <div class="news-carousel">
+            <button class="prev-news">⟨</button>
+            <div class="news-window">
+                <div class="news-track">
+                    <!-- Картка з відео -->
+                    <div class="news-card">
+                        <video autoplay muted loop playsinline>
+                            <source src="images/example.mp4" type="video/mp4">
+
+                        </video>
+                        <h3>Відеоновина!!!(працює)</h3>
+                        <p>Тестове відео для перевірки роботи autoplay у новинах.</p>
+                        <small>02 May 2025</small>
+                    </div>
+
+                    <div class="news-card">
+                        <img src="images/image.png" alt="Новина 1">
+                        <h3>Новина 1</h3>
+                        <p>Чи ви знаєте про новину 1 ?</p>
+                        <small>22 sep 2025</small>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/image1.png" alt="Новина 2">
+                        <h3>Новина 2</h3>
+                        <p>Чи ви знаєте про новину 2 ?</p>
+                        <small>22 sep 2025</small>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/image2.png" alt="Новина 3">
+                        <h3>Новина 3</h3>
+                        <p>Чи ви знаєте про новину 3 ?</p>
+                        <small>22 sep 2025</small>
+                    </div>
+                    <div class="news-card">
+                        <img src="images/image4.png" alt="Новина 4">
+                        <h3>Новина 4</h3>
+                        <p>Чи ви знаєте про новину 4 ?</p>
+                        <small>22 sep 2025</small>
+                    </div>
+                </div>
+            </div>
+            <button class="next-news">⟩</button>
+        </div>
+
+        <button class="all-news">Всі новини</button>
+    </section>
+
+<!--футер-->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Ліва колонка -->
+            <div class="footer-left">
+                <p>61070, Харків, вул. Вадима Манька, 17</p>
+                <p>НАУ "ХАІ"</p>
+                <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+            </div>
+
+            <!-- Центр -->
+            <div class="footer-center">
+                <h2>DICT</h2>
+                <p>2025 DICT кафедра</p>
+                <div class="footer-social">
+                    <a href="#"><img src="images/fb.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/in.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/telegram.svg" alt="Telegram"></a>
+                    <a href="#"><img src="images/viber.svg" alt="Viber"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <!-- Права колонка -->
+            <div class="footer-right">
+                <p><a href="tel:+380577884352">(057) 788-43-52</a></p>
+                <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+                <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        //не получается сделать цикличную карусель после 5 спрыгивает на 1
+        const track = document.querySelector('.carousel-track');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let index = 0;
+        const cardWidth = 220; // ширина картки + відступи
+        const visibleCards = 3;
+        const totalCards = track.children.length;
+
+        nextBtn.addEventListener('click', () => {
+            index++;
+            if (index > totalCards - visibleCards) {
+                index = 0; // повертаємось на початок
+            }
+            track.style.transform = `translateX(${-cardWidth * index}px)`;
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index--;
+            if (index < 0) {
+                index = totalCards - visibleCards; // стрибок на кінець
+            }
+            track.style.transform = `translateX(${-cardWidth * index}px)`;
+        });
+    </script>
+
+    <script>
+        const newsTrack = document.querySelector('.news-track');
+        const prevNews = document.querySelector('.prev-news');
+        const nextNews = document.querySelector('.next-news');
+
+        let newsIndex = 0;
+        const newsCardWidth = 240; // ширина картки + відступ
+        const visibleNews = 3;
+        const totalNews = newsTrack.children.length;
+
+        nextNews.addEventListener('click', () => {
+            newsIndex++;
+            if (newsIndex > totalNews - visibleNews) {
+                newsIndex = 0; // якщо кінець — повертаємось на початок
+            }
+            newsTrack.style.transform = `translateX(${-newsCardWidth * newsIndex}px)`;
+        });
+
+        prevNews.addEventListener('click', () => {
+            newsIndex--;
+            if (newsIndex < 0) {
+                newsIndex = totalNews - visibleNews; // якщо початок — стрибок у кінець
+            }
+            newsTrack.style.transform = `translateX(${-newsCardWidth * newsIndex}px)`;
+        });
+    </script>
+
+
+
