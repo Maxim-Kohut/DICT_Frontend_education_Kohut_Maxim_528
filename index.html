@@ -28,6 +28,7 @@
             <li><a href="#news">Новини</a></li> <!-- ньюз+-->
         </ul>
     </nav>
+    </div>
 </header>
 
 <main>
@@ -47,9 +48,6 @@
         </div>
     </section>
 
-
-
-
     <section id="specialties">
         <h2>Наші спеціальності</h2>
         <p>
@@ -67,9 +65,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <section id="numbers">
         <h2>Якщо в числах</h2>
@@ -94,7 +89,6 @@
             <p>Унікального досвіду</p>
         </div>
     </section>
-
 
     <section id="reviews">
         <h2><span style="color:red">#DICT</span>Experience</h2>
@@ -138,7 +132,6 @@
         </div>
     </section>
 
-
     <section id="science">
         <div class="science-container">
             <div class="science-image">
@@ -159,7 +152,6 @@
         </div>
     </section>
 
-
     <section id="trust">
         <h2>Нам довіряють</h2>
         <div class="logos">
@@ -167,11 +159,9 @@
             <img src="images/sigma.svg" alt="Sigma" title="Sigma">
             <img src="images/gl.svg" alt="GlobalLogic" title="GlobalLogic">
             <img src="images/epam.svg" alt="EPAM" title="EPAM">
- <!--           <img src="images/softserve.svg" alt="SoftServe" title="SoftServe">-->
             <img src="images/dataart.svg" alt="DataArt" title="DataArt">
         </div>
     </section>
-
 
     <section id="contacts">
         <h2>Контакти</h2>
@@ -261,18 +251,15 @@
 
         <button class="all-news">Всі новини</button>
     </section>
-
 <!--футер-->
     <footer>
         <div class="footer-container">
-
             <!-- Ліва колонка -->
             <div class="footer-left">
                 <p>61070, Харків, вул. Вадима Манька, 17</p>
                 <p>НАУ "ХАІ"</p>
                 <p>Кафедра інформаційно-комунікаційних технологій №504</p>
             </div>
-
             <!-- Центр -->
             <div class="footer-center">
                 <h2>DICT</h2>
@@ -295,62 +282,3 @@
 
         </div>
     </footer>
-
-
-    <script>
-        //не получается сделать цикличную карусель после 5 спрыгивает на 1
-        const track = document.querySelector('.carousel-track');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-
-        let index = 0;
-        const cardWidth = 220; // ширина картки + відступи
-        const visibleCards = 3;
-        const totalCards = track.children.length;
-
-        nextBtn.addEventListener('click', () => {
-            index++;
-            if (index > totalCards - visibleCards) {
-                index = 0; // повертаємось на початок
-            }
-            track.style.transform = `translateX(${-cardWidth * index}px)`;
-        });
-
-        prevBtn.addEventListener('click', () => {
-            index--;
-            if (index < 0) {
-                index = totalCards - visibleCards; // стрибок на кінець
-            }
-            track.style.transform = `translateX(${-cardWidth * index}px)`;
-        });
-    </script>
-
-    <script>
-        const newsTrack = document.querySelector('.news-track');
-        const prevNews = document.querySelector('.prev-news');
-        const nextNews = document.querySelector('.next-news');
-
-        let newsIndex = 0;
-        const newsCardWidth = 240; // ширина картки + відступ
-        const visibleNews = 3;
-        const totalNews = newsTrack.children.length;
-
-        nextNews.addEventListener('click', () => {
-            newsIndex++;
-            if (newsIndex > totalNews - visibleNews) {
-                newsIndex = 0; // якщо кінець — повертаємось на початок
-            }
-            newsTrack.style.transform = `translateX(${-newsCardWidth * newsIndex}px)`;
-        });
-
-        prevNews.addEventListener('click', () => {
-            newsIndex--;
-            if (newsIndex < 0) {
-                newsIndex = totalNews - visibleNews; // якщо початок — стрибок у кінець
-            }
-            newsTrack.style.transform = `translateX(${-newsCardWidth * newsIndex}px)`;
-        });
-    </script>
-
-
-
