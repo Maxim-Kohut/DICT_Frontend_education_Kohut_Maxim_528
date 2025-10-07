@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header>
     <div class="header-container">
         <!-- Логотип -->
@@ -17,17 +16,27 @@
             <img src="images/logo.svg" alt="Логотип кафедри">
         </div>
 
-    <nav>
-        <ul>
-            <li><a href="#specialties">Спеціальності</a></li> <!-- спец+-->
-            <li><a href="#numbers">Якщо в числах</a></li> <!-- числа+-->
-            <li><a href="#reviews">Відгуки</a></li> <!-- відгук+-->
-            <li><a href="#science">Наука</a></li> <!-- наука+-->
-            <li><a href="#trust">Нам довіряють</a></li> <!-- довіра+-->
-            <li><a href="#contacts">Контакти</a></li> <!-- конт+-->
-            <li><a href="#news">Новини</a></li> <!-- ньюз+-->
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#specialties">Спеціальності</a></li> <!-- спец+-->
+                <li><a href="#numbers">Якщо в числах</a></li> <!-- числа+-->
+                <li><a href="#reviews">Відгуки</a></li> <!-- відгук+-->
+                <li><a href="#science">Наука</a></li> <!-- наука+-->
+                <li><a href="#trust">Нам довіряють</a></li> <!-- довіра+-->
+                <li><a href="#contacts">Контакти</a></li> <!-- конт+-->
+                <li><a href="#news">Новини</a></li> <!-- ньюз+-->
+            </ul>
+        </nav>
+        <div class="search">
+            <img src="images/search.png" alt="Search">
+            <!-- вроде скачал две иконки, но что то она не работает -->
+        </div>
+        <div class="lang">
+            <ul class="lang__wrapper">
+                <li class="ua"><a href="#">UA</a></li>
+                <li class="en"><a href="#">EN</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 
@@ -36,15 +45,15 @@
         <div class="banner-text">
             <h1>Створюй майбутнє.<br>Тут і зараз!</h1>
             <p>
-                Вибери не просто освіту - обери шлях до свого технологічного майбутнього!
-                Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають
+                Вибери не просто освіту  обери шлях до свого технологічного майбутнього!
+                Кафедра DICT ХАІ це місце, де ідеї стають реальністю, а знання відкривають
                 двері до кар’єри мрії. Почни свій шлях вже сьогодні!
             </p>
             <button class="cta">Хочу поступити</button>
         </div>
 
         <div class="banner-image">
-            <img src="images/boy 2.png" alt="Студент кафедри ІКТ">
+            <img src="images/boy 2.png" alt="Студент кафедри DІCТ">
         </div>
     </section>
 
@@ -89,6 +98,59 @@
             <p>Унікального досвіду</p>
         </div>
     </section>
+    <!-- таблицу ПР4-->
+    <main>
+        <section id="program">
+            <h2>Освітня програма спеціальності "Інженерія і програмування інформаційних систем"</h2>
+            <h3>1 курс</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>1 семестр</th>
+                        <th>Кредити</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Мовні компетентності</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Українські студії</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Всяка фігня і ін</td>
+                        <td>9.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>2 семестр</th>
+                        <th>Кредити</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Вища математика</td>
+                        <td>4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Програмування</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Танці на пілоні</td>
+                        <td>7.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
     <section id="reviews">
         <h2><span style="color:red">#DICT</span>Experience</h2>
@@ -140,12 +202,12 @@
             </div>
             <div class="science-text">
                 <h2>Наука та інновації</h2>
-                <h3>Від аудиторії - до реального проекту</h3>
+                <h3>Від аудиторії до реального проекту</h3>
                 <p>
-                    Наші студенти не просто вивчають теорію - вони беруть участь у реальних проектах,
-                    розробляють ІТ-рішення, створюють стартапи та співпрацюють із компаніями-партнерами.
+                    Наші студенти не просто вивчають теорію вони беруть участь у реальних проектах,
+                    розробляють ІТ рішення, створюють стартапи та співпрацюють із компаніями-партнерами.
                     На кафедрі діють наукові гуртки, лабораторії та ініціативи, де кожен може реалізувати
-                    себе ще під час навчання. Дослідження, що перетворюються на продукт - саме тут це можливо.
+                    себе ще під час навчання. Дослідження, що перетворюються на продукт саме тут це можливо.
                 </p>
                 <button>Дізнатись більше</button>
             </div>
@@ -251,7 +313,67 @@
 
         <button class="all-news">Всі новини</button>
     </section>
-<!--футер-->
+    <!--форма звор звязку-->
+    <section id="anketa">
+        <div class="pic-box">
+            <img src="images/1.png" alt="Форма - зворотній зв’язок">
+        </div>
+
+        <div class="form-box">
+            <form class="custom-form">
+
+                <div class="field field-text">
+                    <label for="input-fullname">Ваше ПІБ</label>
+                    <input type="text" id="input-fullname" name="user_fullname" size="58" maxlength="250">
+                </div>
+
+                <div class="field field-phone">
+                    <label for="input-phone">Контактний телефон</label>
+                    <input type="tel" id="input-phone" name="user_phone" size="28" maxlength="115">
+                </div>
+
+                <div class="field field-mail">
+                    <label for="input-mail">Електронна пошта</label>
+                    <input type="email" id="input-mail" name="user_mail" size="62" maxlength="245">
+                </div>
+
+                <div class="field field-telegram">
+                    <label for="input-telegram">Телеграм</label>
+                    <input type="text" id="input-telegram" name="user_telegram" size="55" maxlength="240">
+                </div>
+
+                <div class="field field-text">
+                    <label for="score-math">Бали НМТ з Математики</label>
+                    <input type="text" id="score-math" name="score_math" size="57" maxlength="248">
+                </div>
+
+                <div class="field field-text">
+                    <label for="score-ukr">Бали НМТ з Української мови</label>
+                    <input type="text" id="score-ukr" name="score_ukr" size="59" maxlength="249">
+                </div>
+
+                <div class="field field-text">
+                    <label for="score-history">Бали НМТ з Історії України</label>
+                    <input type="text" id="score-history" name="score_history" size="56" maxlength="243">
+                </div>
+
+                <div class="field field-text">
+                    <label for="score-extra">Фронт Енд НМТ</label>
+                    <input type="text" id="score-extra" name="score_extra" size="61" maxlength="252">
+                </div>
+
+                <div class="field field-textarea">
+                    <label for="interests">Які напрями вам цікаві?</label>
+                    <textarea id="interests" name="user_interests" rows="4" cols="58"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <input type="submit" class="btn-submit" value="Надіслати">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--футер-->
     <footer>
         <div class="footer-container">
             <!-- Ліва колонка -->
@@ -275,7 +397,7 @@
 
             <!-- Права колонка -->
             <div class="footer-right">
-                <p><a href="tel:+380577884352">(057) 788-43-52</a></p>
+                <p><a href="tel:+380577884352">+38 (057) 788-43-52</a></p>
                 <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
                 <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
             </div>
