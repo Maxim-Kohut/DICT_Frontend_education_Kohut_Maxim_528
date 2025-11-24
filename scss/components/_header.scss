@@ -1,0 +1,98 @@
+// хидер моб версия
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+
+  .logo {
+    width: 90px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+
+    .burger-menu {
+      margin-left: auto;
+      display: block;
+    }
+
+    .menu-toggle {
+      background: $red-color;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: $font-main;
+    }
+
+    .main-menu {
+      list-style: none;
+      margin: 0;
+      padding: 20px;
+
+      display: none;
+      flex-direction: column;
+      gap: 14px;
+
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+
+      background: #222;
+      border-radius: 10px;
+
+      &.show {
+        display: flex;
+      }
+
+      .menu-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@include tablet {
+  header {
+    nav {
+      width: calc(100% - 200px);
+    }
+  }
+}
+
+@include laptop {
+  header {
+    nav {
+      .main-menu {
+        top: 70px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  header {
+    nav {
+      .burger-menu {
+        display: none;
+      }
+
+      .main-menu {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+      }
+    }
+  }
+}
