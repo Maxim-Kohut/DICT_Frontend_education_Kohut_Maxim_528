@@ -1,31 +1,37 @@
-body {/*задание 2+*/
+body {
     max-width: 80em;
     margin: auto;
     padding: 16px;
 }
-header{/* 3+ */
+
+header{
     padding-block: 20px; /*вверх+низ*/
 }
-section { /* задание 4.1+*/
+
+section {
     margin: 40px 0;
 }
+
 /* 4.2 аші спеціальності + */
 section#specialties .specialty-cards .card {
     padding: 20px;
     border-radius: 20px;
     border: 1px solid #8E8E8E;
 }
+
 /* 4.3 в числах+ */
 section#numbers .number {
     padding: 10px;
     border-right: 1px solid #FF3A3A;
 }
+
 /* 4.4 відгуки + */
 section#reviews .review {
     padding: 20px;
     border-radius: 20px;
     border: 1px solid #8E8E8E;
 }
+
 /* 4.5 Новини+ */
 section#news .news-card {
     vertical-align: top;
@@ -33,10 +39,38 @@ section#news .news-card {
     border-right: 1px solid #FF3A3A;
 }
 
-section#news .news-card:last-child { /*кроме последнего елемента внутри ньюз -по заданию+*/
+section#news .news-card:last-child {
+    /*кроме последнего елемента внутри ньюз*/
     border-right: none;
 }
+
 /*  5 футер + */
 footer {
     padding: 40px 0;
+}
+
+/* TABLET (adaptiv) */
+@media (min-width: 796px) {
+
+    section#specialties .specialty-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    section#numbers {
+        display: flex;
+    }
+
+    section#numbers .number:last-child {
+        border-right: none;
+    }
+}
+
+/* DESKTOP (adaptiv) */
+@media (min-width: 1200px) {
+    section#news .news-track {
+        gap: 40px;
+    }
 }
