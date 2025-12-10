@@ -7,29 +7,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage | Department of Information and Communication Technologies</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="images/logo.svg" alt="Логотип кафедри DІCТ">
+        <img src="images/logo.svg" alt="DICT Logo">
+    </div>
+
+    <button class="menu-toggle">Меню</button>
+
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#specialties">Спеціальності</a></li>
+            <li><a href="#numbers">В числах</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#science">Наука</a></li>
+            <li><a href="#trust">Нам довіряють</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+            <li><a href="#news">Новини</a></li>
+        </ul>
+
+        <div class="mobile-menu">
+            <a href="#specialties">Спеціальності</a>
+            <a href="#numbers">В числах</a>
+            <a href="#reviews">Відгуки</a>
+            <a href="#science">Наука</a>
+            <a href="#trust">Нам довіряють</a>
+            <a href="#contacts">Контакти</a>
+            <a href="#news">Новини</a>
         </div>
+    </nav>
 
-        <nav>
-            <ul class="main-menu">
-                <li><a class="menu-link" href="#specialties">Спеціальності</a></li>
-                <li><a class="menu-link" href="#numbers">Якщо в числах</a></li>
-                <li><a class="menu-link" href="#reviews">Відгуки</a></li>
-                <li><a class="menu-link" href="#science">Наука</a></li>
-                <li><a class="menu-link" href="#trust">Нам довіряють</a></li>
-                <li><a class="menu-link" href="#contacts">Контакти</a></li>
-                <li><a class="menu-link" href="#news">Новини</a></li>
-                <li><a class="menu-link" href="grid.html">Grid</a></li>
-            </ul>
-        </nav>
-
+    <div class="right-block">
         <div class="search">
-            <img src="images/search.png" alt="Пошук">
+            <img src="images/search.png" alt="">
         </div>
+
         <div class="lang">
             <ul class="lang-wrapper">
                 <li class="ua"><a class="is-active" href="#">UA</a></li>
@@ -52,7 +73,7 @@
             </p>
         </div>
 
-        <a href="#" class="button">Хочу вступити</a>
+        <a href="#" class="button-red">Хочу вступити</a>
     </div>
 
     <div class="image-wrapper">
@@ -79,7 +100,6 @@
     </section>
     <section id="numbers">
         <h2>Якщо в числах</h2>
-
         <div class="number">
             <h3>18</h3>
             <p>Досвідчених викладачів</p>
@@ -153,18 +173,20 @@
             </div>
         </section>
     </main>
-    <section id="reviews">
-        <h2><span style="color:red">#DICT</span>Experience</h2>
 
-                    <div class="review">
-                        <p>"Кафедра чудова і дуже хороша №0"</p>
-                        <img src="images/feedback-1.png" alt="Аватар 1">
-                        <p><b>Максим</b><br>528, група</p>
-                        <audio controls>
-                            <source src="images/example.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
-                    <!-- -->
+<section id="reviews">
+    <h2><span style="color:red">#DICT</span>Experience</h2>
+
+    <div class="reviews-slider">
+        <div class="review">
+            <p>"Кафедра чудова і дуже хороша №0"</p>
+            <img src="images/feedback-1.png" alt="Аватар 1">
+            <p><b>Максим</b><br>528, група</p>
+            <audio controls>
+                <source src="images/example.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
                     <div class="review">
                         <p>"Кафедра чудова і дуже хороша №1"</p>
                         <img src="images/feedback-2.png" alt="Аватар 2">
@@ -256,55 +278,53 @@
             </div>
         </div>
     </section>
-    <section id="news">
-        <h2>Новини</h2>
 
-        <div class="news-carousel">
-            <button class="prev-news">⟨</button>
-            <div class="news-window">
-                <div class="news-track">
-                    <!-- Картка з відео -->
-                    <div class="news-card">
-                        <video autoplay muted loop playsinline>
-                            <source src="images/example.mp4" type="video/mp4">
+<section id="news">
+    <h2>Новини</h2>
 
-                        </video>
-                        <h3>Відеоновина!!!(працює)</h3>
-                        <p>Тестове відео для перевірки роботи autoplay у новинах.</p>
-                        <small>02 May 2025</small>
-                    </div>
+    <div class="news-cards">
 
-                    <div class="news-card">
-                        <img src="images/image.png" alt="Новина 1">
-                        <h3>Новина 1</h3>
-                        <p>Чи ви знаєте про новину 1 ?</p>
-                        <small>22 sep 2025</small>
-                    </div>
-                    <div class="news-card">
-                        <img src="images/image1.png" alt="Новина 2">
-                        <h3>Новина 2</h3>
-                        <p>Чи ви знаєте про новину 2 ?</p>
-                        <small>22 sep 2025</small>
-                    </div>
-                    <div class="news-card">
-                        <img src="images/image2.png" alt="Новина 3">
-                        <h3>Новина 3</h3>
-                        <p>Чи ви знаєте про новину 3 ?</p>
-                        <small>22 sep 2025</small>
-                    </div>
-                    <div class="news-card">
-                        <img src="images/image4.png" alt="Новина 4">
-                        <h3>Новина 4</h3>
-                        <p>Чи ви знаєте про новину 4 ?</p>
-                        <small>22 sep 2025</small>
-                    </div>
-                </div>
-            </div>
-            <button class="next-news">⟩</button>
+        <div class="news-card">
+            <video autoplay muted loop playsinline>
+                <source src="images/example.mp4" type="video/mp4">
+            </video>
+            <h3>Відеоновина!!</h3>
+            <p>Тестове відео autoplay.</p>
+            <small>02 May 2025</small>
         </div>
 
-        <button class="all-news">Всі новини</button>
-    </section>
+        <div class="news-card">
+            <img src="images/image.png" alt="">
+            <h3>Новина 1</h3>
+            <p>Чи ви знаєте про новину 1?</p>
+            <small>22 sep 2025</small>
+        </div>
+
+        <div class="news-card">
+            <img src="images/image1.png" alt="">
+            <h3>Новина 2</h3>
+            <p>Чи ви знаєте про новину 2?</p>
+            <small>22 sep 2025</small>
+        </div>
+
+        <div class="news-card">
+            <img src="images/image2.png" alt="">
+            <h3>Новина 3</h3>
+            <p>Чи ви знаєте про новину 3?</p>
+            <small>22 sep 2025</small>
+        </div>
+
+        <div class="news-card">
+            <img src="images/image4.png" alt="">
+            <h3>Новина 4</h3>
+            <p>Чи ви знаєте про новину 4?</p>
+            <small>22 sep 2025</small>
+        </div>
+
+    </div>
+
+    <button class="all-news">Всі новини</button>
+</section>
 
     <section id="anketa">
         <div class="pic-box">
